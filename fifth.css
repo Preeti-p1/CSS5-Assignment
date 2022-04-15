@@ -1,0 +1,427 @@
+.container {
+    width: auto;
+    height: 650px;
+    background-color: yellow;
+}
+
+.h3 {
+    padding-left: 560px;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.item1 {
+    position: relative;
+    left: 500px;
+}
+
+.box2 {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: pink;
+    position: relative;
+    left: 520px;
+    animation-name: pr1;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    margin: 10px;
+}
+
+@keyframes pr1 {
+    0% {
+        transform: skewY(30deg);
+    }
+
+    50% {
+        transform: skewY(-30deg);
+    }
+
+    100% {
+        transform: skewY(30deg);
+    }
+}
+
+.box {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: aquamarine;
+    animation: skew 3s infinite alternate;
+    position: relative;
+    left: 520px;
+    animation-name: pr2;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    margin: 10px;
+}
+
+@keyframes pr2 {
+    0% {
+        transform: skew(30deg);
+    }
+
+    50% {
+        transform: skew(-30deg);
+    }
+
+    100% {
+        transform: skew(30deg);
+    }
+}
+
+.box3 {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: aquamarine;
+    animation-name: pr4;
+    animation-duration: 4s;
+    position: relative;
+    animation-iteration-count: infinite;
+    left: 520px;
+    margin: 10px;
+}
+
+@keyframes pr4 {
+    0% {
+        transform: rotateZ(0deg);
+    }
+
+    50% {
+        transform: rotateZ(180deg);
+    }
+
+    100% {
+        transform: rotateZ(360deg);
+
+    }
+}
+
+.box4 {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: aquamarine;
+    position: relative;
+    left: 520px;
+    margin: 10px;
+    transform: rotateX(60deg);
+    animation-duration: 2s;
+    /* animation-timing-function: ease; */
+    animation-direction: alternate;
+    animation-play-state: running;
+    animation-name: pr7;
+    animation-iteration-count: infinite;
+}
+
+@keyframes pr7 {
+    0% {
+        transform: rotateX(0);
+    }
+
+    100% {
+        transform: rotateX(70deg);
+    }
+}
+
+.box5 {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: brown;
+    animation: skew 3s infinite alternate;
+    position: relative;
+    left: 520px;
+    margin: 10px;
+    transform: rotateY(60deg);
+    animation-duration: 2s;
+    /* animation-timing-function: ease; */
+
+    animation-play-state: running;
+    animation-name: pr8;
+    animation-iteration-count: infinite
+}
+
+@keyframes pr8 {
+    0% {
+        transform: rotateY(0);
+    }
+
+    100% {
+        transform: rotateY(70deg);
+    }
+}
+
+.box6 {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    animation: skew 3s infinite alternate;
+    position: relative;
+    left: 520px;
+    margin: 10px;
+    animation-name: pr9;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes pr9 {
+    0% {
+        transform: rotateZ(0deg)
+    }
+
+    50% {
+        transform: rotateZ(180deg)
+    }
+}
+
+a {
+    text-decoration: underline;
+    padding-left: 560px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.container1 {
+    width: auto;
+    height: auto;
+    background-color: yellow;
+}
+
+h1 {
+    text-align: center;
+}
+
+.green {
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    position: relative;
+    left: 500px;
+    margin-bottom: 10px;
+    transition-property: all;
+    transition-duration: 2s;
+}
+
+#gr1:hover {
+    width: 200px;
+}
+
+#gr2:hover {
+    height: 200px;
+    width: 200px;
+}
+
+#gr4:hover {
+
+    width: 200px;
+}
+
+#gr5:hover {
+
+    width: 200px;
+}
+
+#gr6:hover {
+
+    width: 200px;
+}
+
+#gr7:hover {
+
+    width: 200px;
+}
+
+#gr3:hover {
+    width: 250px;
+}
+
+.sky {
+
+    left: 10px;
+    position: absolute;
+}
+
+.sky1 {
+    height: 400px;
+    width: 1400px;
+}
+
+.city1 {
+    width: 1650px;
+
+}
+
+.city {
+    position: absolute;
+    left: 10px;
+    top: 120px;
+    z-index: 2;
+    animation-name: preeti2;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.road1 {
+    width: 2400px;
+    height: 200px;
+
+}
+
+.road {
+    position: absolute;
+    top: 400px;
+    left: 9px;
+    /* bottom: 10000px; */
+    z-index: 1;
+    transition-property: all;
+    animation-name: preeti2;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes preeti2 {
+    from {
+        position: absolute;
+        left: 0px;
+    }
+
+    to {
+        position: absolute;
+        left: -200px;
+    }
+
+}
+
+.car1 {
+    height: 200px;
+    width: 500px;
+}
+
+.car {
+    position: absolute;
+    top: 400px;
+    left: 500px;
+    z-index: 3;
+}
+
+.wheel1 {
+    height: 80px;
+    width: 80px;
+    animation-name: preeti1;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes preeti1 {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(180deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.wheel2 {
+    z-index: 4;
+    position: absolute;
+    top: 510px;
+    left: 550px;
+}
+
+.wheel {
+    z-index: 4;
+    position: absolute;
+    top: 510px;
+    left: 855px;
+}
+
+.sun1 {
+    height: 100px;
+    width: 100px;
+}
+
+.sun {
+    z-index: 4;
+    position: absolute;
+    top: 80px;
+    right: 20px;
+    transition-property: all;
+    animation-name: preeti3;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes preeti3 {
+    from {
+        position: absolute;
+        right: 20px;
+    }
+
+    to {
+        position: absolute;
+        right: 150px;
+    }
+
+}
+
+.flag1 {
+    height: 100px;
+    width: 100px;
+}
+
+.flag {
+    z-index: 4;
+    position: absolute;
+    top: 380px;
+    left: 850px;
+}
+
+.class10 {
+    z-index: 1;
+    font-weight: bold;
+    font-size: 40px;
+    background-color: rgb(255, 111, 0);
+    width: 150px;
+    height: 50px;
+    position: absolute;
+    top: 60px;
+    left: 88px;
+    padding-top: 3px;
+}
+
+.class13 {
+    z-index: 2;
+    font-weight: bold;
+    font-size: 40px;
+    background-color: white;
+    width: 320px;
+    height: 50px;
+    position: relative;
+    top: 55px;
+    left: 218px;
+}
+
+.class12 {
+    z-index: 1;
+    font-weight: bold;
+    font-size: 40px;
+    background-color: green;
+    width: 110px;
+    height: 50px;
+    position: absolute;
+    top: 60px;
+    right: 488px;
+    padding-top: 3px;
+}
